@@ -7,3 +7,4 @@ print(poisson_pmf(average_rate=5,event_to_find_probability=12))#0.00343424028557
 """no we are testing for the probability of getting 2 heads out of 3 trials 
 each time getting head we have a probability 0.5"""
 print(binomial_pmf(2,3,0.5))#0.375
+print("the prob is :",poisson_pmf(average_rate=50,event_to_find_probability=100))
