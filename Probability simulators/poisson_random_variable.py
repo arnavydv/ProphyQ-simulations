@@ -1,4 +1,6 @@
 import math 
+import numpy as np 
+from scipy.integrate import quad
 def poisson_pmf(average_rate:float,event_to_find_probability:float)->float:
     """poisson random variable tells us about 
     somethings is happening at an average rate 
@@ -15,3 +17,8 @@ def binomial_pmf(success:float,number_of_trails:float,proability:float)->float:
     second_term=proability**success
     third_term=(1-proability)**(number_of_trails-success)
     return choosing*second_term*third_term
+
+def prob_uni_rv(f, ll: float, ul: float):
+    return quad(f, ll, ul)
+
+
