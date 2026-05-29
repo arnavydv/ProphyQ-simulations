@@ -1,0 +1,8 @@
+- [ ] Fix importability of `Probability simulators/monte_carlo_option_pricing.py` (corrupted return at end)
+- [ ] Create `Probability simulators/test_monte_carlo_option_pricing.py` using `unittest`
+  - [ ] Sanity tests for Monte Carlo option price (non-negative, finite)
+  - [ ] Compare Monte Carlo vs Black-Scholes (tolerance, seeded randomness)
+  - [ ] Shape test for `simulate_portfolio_returns`
+  - [ ] VaR/CVaR relationship test
+- [ ] Run tests via `python -m unittest Probability simulators/test_monte_carlo_option_pricing.py`
+- [ ] Fix any test failures
